@@ -1,1 +1,107 @@
+/*
+primario: #F9EFC9
+secundario: azure
+atencion: #D09152
+*/
+/* fuentes externas */
+/*       */
+/*Poppins*/@import url('http://fonts.googleapis.com/css2?family=Poppins:wgt@200;300;400;500;600;700;800;900&display=swap');
+/*Kalam  */@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+/*Satisfy*/@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kalam&family=Satisfy&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Agbalumo, cursive;
+	background: azure;
+	font-family: Rubik;
+}
+
+header {
+	background: #F9EFC9;
+	color: #D06200;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+}
+
+.marca {
+	font-family: 'Dancing Script';
+}
+
+.marca p {
+	font-family: Kalam;
+	font-size: 1.2rem;
+}
+
+.logo img {
+	width:  5em;
+}
+main{
+	margin: 0.35rem;
+	padding: 0.35rem;
+	box-sizing: border-box;
+}
+
+ol{
+	margin: 0.5rem;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+ul {
+	/*min-width: 500px;*/
+	display: flex;
+	justify-content: flex-end;
+	gap:  20px;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #D06200;
+}
+.recetas2{
+	margin: 0.5rem;
+	padding: 0.5rem;
+	display: block;
+	justify-content: flex-start;
+}
+footer{
+	font-family: 'Dancing Script';
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+@media (max-width: 800px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+	ul {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
 

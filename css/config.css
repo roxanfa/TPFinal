@@ -1,7 +1,10 @@
 /*
 primario: #F9EFC9
 secundario: azure
-atencion: #D09152
+atencion: #D06200
+#F59702
+#9DC21C
+
 */
 /* fuentes externas */
 /*       */
@@ -20,13 +23,13 @@ atencion: #D09152
 }
 
 body {
-	background: azure;
+	background: #F9EFC9;
 	font-family: Kalam;
 }
 
 header {
-	background: #F9EFC9;
-	color: #D06200;
+	background: #F59702;
+	color: #1F7B00;
 }
 
 .navbar1{
@@ -81,7 +84,7 @@ ul li {
 
 a {
 	text-decoration: none;
-	color: #D06200;
+	color: #1F7B00;
 }
 
 .principal{

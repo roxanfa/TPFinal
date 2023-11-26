@@ -5,7 +5,7 @@ atencion: #D09152
 */
 /* fuentes externas */
 /*       */
-/*Poppins*/@import url('http://fonts.googleapis.com/css2?family=Poppins:wgt@200;300;400;500;600;700;800;900&display=swap');
+/*Satisfy*/@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kalam&family=Satisfy&family=Sriracha&display=swap');
 /*Kalam  */@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 /*Satisfy*/@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kalam&family=Satisfy&family=Sriracha&display=swap');
 
@@ -20,7 +20,6 @@ atencion: #D09152
 }
 
 body {
-	font-family: Agbalumo, cursive;
 	background: azure;
 	font-family: Rubik;
 }
@@ -88,6 +87,16 @@ footer{
 	font-family: 'Dancing Script';
 	display: flex;
 	justify-content: flex-end;
+}
+
+.direccion {
+	text-align: center;
+	border: double 10px #D06200;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px
+	
 }
 
 

@@ -7,7 +7,7 @@ atencion: #D09152
 /*       */
 /*Satisfy*/@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kalam&family=Satisfy&family=Sriracha&display=swap');
 /*Kalam  */@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-/*Satisfy*/@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kalam&family=Satisfy&family=Sriracha&display=swap');
+
 
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
@@ -21,7 +21,7 @@ atencion: #D09152
 
 body {
 	background: azure;
-	font-family: Rubik;
+	font-family: Kalam;
 }
 
 header {
@@ -83,6 +83,19 @@ a {
 	text-decoration: none;
 	color: #D06200;
 }
+
+.principal{
+	font-size: 2rem;
+	margin: 0 3rem 0 3rem;
+}
+
+.alimentacion{
+	font-size: 1.7rem;
+	list-style: disc;
+	margin-left: 7rem;
+
+}
+
 .recetas2{
 	margin: 0.5rem;
 	padding: 0.5rem;

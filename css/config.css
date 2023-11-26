@@ -29,7 +29,7 @@ header {
 	color: #D06200;
 }
 
-.navbar {
+.navbar1{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -42,10 +42,15 @@ header {
 .marca {
 	font-family: 'Dancing Script';
 }
-
+.marca h1{
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
 .marca p {
 	font-family: Kalam;
 	font-size: 1.2rem;
+	margin-bottom: 0;
 }
 
 .logo img {
@@ -63,7 +68,7 @@ ol{
 	box-sizing: border-box;
 }
 ul {
-	/*min-width: 500px;*/
+	min-width: 500px;
 	display: flex;
 	justify-content: flex-end;
 	gap:  20px;
@@ -71,6 +76,7 @@ ul {
 
 ul li {
 	list-style: none;
+	font-family: Kalam;
 }
 
 a {
@@ -81,6 +87,7 @@ a {
 	margin: 0.5rem;
 	padding: 0.5rem;
 	display: block;
+	font-size: 1.2rem;
 	justify-content: flex-start;
 }
 footer{
@@ -88,6 +95,8 @@ footer{
 	display: flex;
 	justify-content: flex-end;
 }
+
+
 
 .direccion {
 	text-align: center;

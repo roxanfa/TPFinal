@@ -1,9 +1,7 @@
-/*
-primario: #F9EFC9
-secundario: azure
-atencion: #D06200
-#F59702
-#9DC21C
+/* colores usados
+#F9EFC9
+#FFA460
+black
 
 */
 /* fuentes externas */
@@ -18,13 +16,18 @@ atencion: #D06200
 }
 
 body {
+	margin: 0;
+    padding: 150px 0 0 0;
 	background: #F9EFC9;
 	font-family: Kalam;
 }
 
 header {
-	background: #F59702;
-	color: #1F7B00;
+	background: #FFA460;
+	position: fixed;
+    top: 0;
+    width: 100%;
+    /*padding: 15px 20px;*/
 }
 
 .navbar1{
@@ -54,9 +57,10 @@ header {
 .logo img {
 	width:  5em;
 }
-main{
-	margin: 0.35rem;
-	padding: 0.35rem;
+.galeria{
+	padding: 400px 0 0 0;
+	/*margin: 0.35rem;
+	padding: 0.35rem;*/
 	box-sizing: border-box;
 }
 
@@ -79,8 +83,12 @@ ul li {
 
 a {
 	text-decoration: none;
-	color: #1F7B00;
 }
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+}
+
 
 .principal{
 	font-size: 2rem;
@@ -109,13 +117,13 @@ footer{
 
 
 
-.direccion {
-	text-align: center;	
-}
-
-.contacto{
+contacto {
 	display: block;
-	margin-left: 50%;
+	text-align: center;
+}
+contacto2{
+	display: block;
+	text-align: center;
 }
 
 

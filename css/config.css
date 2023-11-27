@@ -11,11 +11,6 @@ atencion: #D06200
 /*Satisfy*/@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kalam&family=Satisfy&family=Sriracha&display=swap');
 /*Kalam  */@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -115,13 +110,12 @@ footer{
 
 
 .direccion {
-	text-align: center;
-	border: double 10px #D06200;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin-right: 50px;
-	margin-left: 50px
-	
+	text-align: center;	
+}
+
+.contacto{
+	display: block;
+	margin-left: 50%;
 }
 
 

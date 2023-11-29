@@ -26,13 +26,14 @@ header {
 	background-image: url("../img/logos/fondo.jpg");
 	background-size: 65%;
 	/*background: #FFA460;*/
-	height: 8%;
+	height: 10%;
 	position: fixed;
     top: 0;
     width: 100%;
 }
 
 .navbar1{
+	/*margin-top: 1em;*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -43,24 +44,26 @@ header {
 }
 
 .marca {
+	margin-top: 0;
 	margin-left: 1em;
 	font-family: 'Dancing Script';
 	font-weight: bolder;
 }
 .marca h1{
-
-    margin-bottom: 0;
+	width: 100%;
     font-size: 2em;
     font-weight: bold;
+    margin-top: 0.35em;
 }
 .marca p {
 	font-family: Kalam;
-	font-size: 1.2rem;
-	margin-bottom: 0;
+	font-size: 1.5em;
 }
 
 .logo img {
+	margin-top: 0;
 	width:  5em;
+	height: 5em;
 }
 
 .galeria{
@@ -91,6 +94,7 @@ ul li {
 	font-family: Kalam;
 	font-size: 1.2em;
 	font-weight: bold;
+	justify-content: center;
 }
 
 li img{
@@ -100,6 +104,7 @@ li img{
 
 a {
 	text-decoration: none;
+	color: black;
 }
 a:-webkit-any-link {
     color: black;
@@ -136,3 +141,66 @@ contacto2{
 	display: block;
 	text-align: center;
 }
+
+
+/* chico */
+@media (max-width: 576px)  {
+	.logo{
+		margin-right: 5em;
+	}
+	.marca h1 {
+		font-size: .8em;
+	}
+	.marca p{
+		font-size: 0.5em;
+	}
+	header{
+		background-image: none;
+		background-color:#FFA460;
+	}
+	ul li {
+		font-size: 0.5em;
+		font-weight: bold;
+		align-items: center;
+		justify-content: flex-start;
+
+	}
+	ul li img{
+		width: 14px;
+		height: 14px;
+	}
+
+}
+
+/* medio */
+@media (min-width: 577px) and (max-width: 1000px)  {
+	
+	.logo{
+		margin-right: 3em;
+	}
+
+	.marca h1{
+		font-size: 1.2em;
+	}
+	.marca p{
+		font-size: 1em;
+	}
+	ul li {
+		font-size: 0.8em;
+		font-weight: bold;
+		justify-content: center;
+	}
+	ul li img{
+		width: 18px;
+		height: 18px;
+	}
+}
+
+/* grande */
+@media (max-width: 1001px)  {
+	.logo{
+		margin-right: 3em;
+	}
+
+}
+

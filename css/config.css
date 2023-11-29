@@ -41,9 +41,11 @@ header {
 }
 
 .marca {
+	margin-left: 1em;
 	font-family: 'Dancing Script';
 }
 .marca h1{
+
     margin-bottom: 0;
     font-size: 2em;
     font-weight: bold;
@@ -57,19 +59,27 @@ header {
 .logo img {
 	width:  5em;
 }
+
 .galeria{
-	padding: 400px 0 0 0;
+	/*padding: 400px 0 0 0;*/
 	/*margin: 0.35rem;
 	padding: 0.35rem;*/
+	display: flex;
 	box-sizing: border-box;
+	justify-content: center;
 }
-
+.galeria2{
+	margin-left: 2em;
+	display: block;
+	text-align: center;
+}
 ol{
 	margin: 0.5rem;
 	padding: 0.5rem;
 	box-sizing: border-box;
 }
 ul {
+	margin-right: 1em;
 	min-width: 500px;
 	display: flex;
 	justify-content: flex-end;

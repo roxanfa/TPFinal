@@ -30,7 +30,6 @@ header {
 	position: fixed;
     top: 0;
     width: 100%;
-    /*padding: 15px 20px;*/
 }
 
 .navbar1{
@@ -65,9 +64,6 @@ header {
 }
 
 .galeria{
-	/*padding: 400px 0 0 0;*/
-	/*margin: 0.35rem;
-	padding: 0.35rem;*/
 	display: flex;
 	box-sizing: border-box;
 	justify-content: center;
@@ -95,6 +91,11 @@ ul li {
 	font-family: Kalam;
 	font-size: 1.2em;
 	font-weight: bold;
+}
+
+li img{
+	width: 24px;
+	height: 24px;
 }
 
 a {
@@ -125,12 +126,6 @@ a:-webkit-any-link {
 	font-size: 1.2rem;
 	justify-content: flex-start;
 }
-footer{
-	font-family: 'Dancing Script';
-	display: flex;
-	justify-content: flex-end;
-}
-
 
 
 contacto {
@@ -141,19 +136,3 @@ contacto2{
 	display: block;
 	text-align: center;
 }
-
-
-@media (max-width: 800px) {
-	.navbar {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-}
-
-@media (min-width: 500px) and (max-width: 800px) {
-	ul {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-}
-

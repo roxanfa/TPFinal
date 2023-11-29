@@ -23,7 +23,10 @@ body {
 }
 
 header {
-	background: #FFA460;
+	background-image: url("../img/logos/fondo.jpg");
+	background-size: 65%;
+	/*background: #FFA460;*/
+	height: 8%;
 	position: fixed;
     top: 0;
     width: 100%;
@@ -43,6 +46,7 @@ header {
 .marca {
 	margin-left: 1em;
 	font-family: 'Dancing Script';
+	font-weight: bolder;
 }
 .marca h1{
 
@@ -89,6 +93,8 @@ ul {
 ul li {
 	list-style: none;
 	font-family: Kalam;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 a {

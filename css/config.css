@@ -17,9 +17,12 @@ black
 
 body {
 	margin: 0;
-    padding: 150px 0 0 0;
+  padding: 150px 0 0 0;
 	background: #F9EFC9;
 	font-family: Kalam;
+	position: relative;
+	padding-bottom: 3em;
+	min-height: 100vh;
 }
 
 header {
@@ -108,10 +111,16 @@ a:-webkit-any-link {
     cursor: pointer;
 }
 
-/*main{
-	margin-top: 1em;
-	margin-left: 1em;
-}*/
+footer{
+	background: #FFA460;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 0.5em 0;
+	font-weight: bolder;
+	
+}
 .principal{
 	font-size: 2rem;
 	margin: 0 3rem 0 3rem;

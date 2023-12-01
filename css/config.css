@@ -24,7 +24,7 @@ black
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	list-style: none;
 }
 
@@ -35,8 +35,8 @@ a {
 
 body {
 	margin-top: 0;
-	background: #F9EFC9;
-	font-family: Kalam;
+	background: var(--colorbody);
+	font-family: var(--fuente2);
 	position: relative;
 	padding-bottom: 3em;
 	min-height: 100vh;
@@ -194,6 +194,7 @@ main{
 
 
 contacto {
+	margin-top: 100px;
 	display: block;
 	text-align: center;
 }
@@ -203,7 +204,7 @@ contacto2{
 }
 
 footer{
-	background: #FFA460;
+	background: var(--colorbarra);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -215,9 +216,9 @@ footer{
 .ir-arriba {
   display:none;
   padding:20px;
-  background:#FFA460;
+  background:var(--colorbarra);
   font-size:20px;
-  color:black;
+  color:var(--colortexto);
   cursor:pointer;
   position: fixed;
   bottom:20px;
@@ -310,6 +311,12 @@ footer{
 		font-size: 1.5em;
 		margin-left: 2em;
 	}
+	.recetas2{
+		font-size: 1.4em;
+	}
+	#PanQueso, #Tiramisu, #TortaManzana{
+		font-size: 1.2em;
+	}
 }
 
 /* Largo */
@@ -330,6 +337,11 @@ footer{
 	.alimentacion{
 		font-size: 1.7em;
 		margin-left: 3em;
-
+	}
+	.recetas2{
+		font-size: 1.5em;
+	}
+	#PanQueso, #Tiramisu, #TortaManzana{
+		font-size: 1.4em;
 	}
 }

@@ -25,12 +25,13 @@ body {
 	min-height: 100vh;
 }
 
+
 header {
 	background: #FFA460;
+	height: 130px;
 	position: fixed;
-    top: 0;
-    width: 100%;
-    
+  top: 0;
+  width: 100%;  
 }
 
 .navbar1{
@@ -41,6 +42,7 @@ header {
 
 .logo {
 	display: flex;
+	opacity: 1;
 }
 
 .marca {
@@ -48,7 +50,6 @@ header {
 	margin-left: 1em;
 	font-family: 'Dancing Script';
 	font-weight: bolder;
-	height: 100px;
 }
 .marca h1{
 	width: 100%;
@@ -59,12 +60,6 @@ header {
 .marca p {
 	font-family: Kalam;
 	font-size: 1.5em;
-}
-
-.logo img {
-	margin-top: 0;
-	width:  5em;
-	height: 5em;
 }
 
 .galeria{
@@ -90,16 +85,12 @@ ul {
 }
 
 ul li {
+	margin-right: 1em;
 	list-style: none;
 	font-family: Kalam;
 	font-size: 1.2em;
 	font-weight: bold;
 	justify-content: center;
-}
-
-li img{
-	width: 24px;
-	height: 24px;
 }
 
 a {
@@ -109,28 +100,6 @@ a {
 a:-webkit-any-link {
     color: black;
     cursor: pointer;
-}
-
-footer{
-	background: #FFA460;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	padding: 0.5em 0;
-	font-weight: bolder;
-	
-}
-.principal{
-	font-size: 2rem;
-	margin: 0 3rem 0 3rem;
-}
-
-.alimentacion{/* index.html */
-	font-size: 2rem;
-	list-style: disc;
-	margin-left: 7rem;
-
 }
 
 .recetas2{
@@ -151,13 +120,19 @@ contacto2{
 	text-align: center;
 }
 
-.recetasmain{
-	margin-left: 1em;
+footer{
+	background: #FFA460;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 0.5em 0;
+	
 }
 
 
-/* BOTON IR ARRIBA */
-/* COMPORTAMIENTO */
+
+/* ir arriba */
 .ir-arriba {
   display:none;
   padding:20px;
@@ -170,7 +145,7 @@ contacto2{
   right:20px;
 }
 
-/* ICONO */
+/* datos BOTON */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?kk6l63');
@@ -184,6 +159,7 @@ contacto2{
 }
 
 [class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -192,6 +168,7 @@ contacto2{
   text-transform: none;
   line-height: 1;
 
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -201,10 +178,14 @@ contacto2{
 }
 
 
+
+
 /* chico */
 @media (max-width: 576px)  {
 	.logo{
+		
 		width: 320px;
+
 	}
 	.marca{
 		text-align: center;
@@ -222,39 +203,39 @@ contacto2{
 	}
 
 	.logo img {
-		margin-top: 1.8em;
+		margin-top: 1em;
 		margin-left: 1em;
 		width:  7em;
-		height: 3em;
+		height: 100px;
 	}
 
 	ul{
 		display: inline-block;
-		margin-left: 1em;
-		margin-top: 1em;
+		margin-left: 0.15em;
+		margin-top: 0.5em;
 	}
 
 	ul li {
 		display: table;
 		list-style: none;
 		font-family: Kalam;
-		font-size: 0.75em;
-		font-weight: bold;		
+		font-size: 0.9em;
+		font-weight: bold;
 	}
 
 	li img{
 		width: 14px;
 		height: 14px;
 	}
-
 	.principal{
-		margin-top: 0.15em;
-		font-size: 1.16em;
+		font-size: 1.2rem;
+		margin: 0 3rem 0 3rem;
 	}
 
 	.alimentacion{
-		font-size: 1.16em;
+		font-size: 1.2rem;
 		list-style: disc;
+		margin-left: 7rem;
 
 	}
 }
@@ -262,16 +243,18 @@ contacto2{
 /* medio */
 @media (min-width: 577px) and (max-width: 1000px)  {
 	.logo{
-		width: 400px;
+		width: 320px;
 	}
 	.marca{
+		margin-top: 1em;
 		text-align: center;
-		width: 180px;
+		width: 250px;
+		height: 100px;
 	}
 	.marca h1{
 	    font-size: 1.5em;
     	font-weight: bold;
-    	margin-top: 0.65em;
+    	/*margin-top: 0.65em;*/
 	}
 	.marca p {
 		font-family: Kalam;
@@ -279,21 +262,16 @@ contacto2{
 	}
 
 	.logo img {
-		margin-top: 0;
+		margin-top: 1em;
 		margin-left: 1em;
 		width:  7em;
-		height: 3em;
 		height: 100px;
-	}
-
-	header{
-		height: 150px;
 	}
 
 	ul{
 		display: inline-block;
 		margin-left: 1em;
-		margin-top: 1em;
+		margin-top: 0.3em;
 	}
 
 	ul li {
@@ -302,62 +280,61 @@ contacto2{
 		font-family: Kalam;
 		font-size: 1em;
 		font-weight: bold;
-		/*justify-content: flex-end;*/
 	}
 
 	li img{
 		width: 18px;
 		height: 18px;
 	}
-
 	.principal{
-		font-size: 1.3em;
-		margin-top: .5em;
+		font-size: 1.6rem;
+		margin: 0 3rem 0 3rem;
 	}
 
 	.alimentacion{
-		font-size: 1.3em;
+		font-size: 1.6rem;
 		list-style: disc;
+		margin-left: 7rem;
+
 	}
 }
 
 /* grande */
 @media (min-width: 1001px)  {
 	.logo{
-		width: 380px;
+		width: 400px;
 	}
 	.marca{
+		margin-top: 1em;
 		width: 300px;
 		text-align: center;
 		height: 100px;
 	}
 	
 	.logo img {
-		margin-top: 0;
+		margin-top: 1em;
 		margin-left: 1em;
 		width:  7em;
 		height: 3em;
 		height: 100px;
 	}
-	header{
-		height: 100px;
-	}
+	
 	ul{
-		margin-right: 1em;
+		margin-top: 2em;
 	}
 	li img{
 		width: 24px;
 		height: 24px;
 	}
-
 	.principal{
-		font-size: 1.45em;
-		margin-top: 0.5em;
+		font-size: 1.8rem;
+		margin: 0 3rem 0 3rem;
 	}
 
 	.alimentacion{
-		font-size: 1.45em;
+		font-size: 1.8rem;
 		list-style: disc;
+		margin-left: 7rem;
 	}
 }
 

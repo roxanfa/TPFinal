@@ -9,30 +9,43 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/arriba.js"></script>
     <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <span class="ir-arriba icon-arrow-up2"></span>
+    <!-- INICIO Barra de navegacion -->
     <header>
-      <div class="navbar1">
-        <div class="logo">      
-          <img src="img/logos/logo2.png">
-          <div class="marca">
-            <h1>Las recetas de Ana</h1>
-            <p>Viandas saludables</p>  
+      <div class="barra">
+        <div class="barra_marca">
+          <img class="marca_logo" src="img/logos/logo2.png">
+          <span class="marca_negocio">Viandas Saludables</span>
+          <span class="marca_nombre">Las Recetas de Ana</span>
+        </div>
+        <div class="barra_links">
+          <a class="link" href="index.html">Inicio</a>
+          <a class="link" href="Galeria.html">Galeria</a>
+          <a class="link" href="Contacto.html">Contacto</a>
+          <a class="icono" href="https://www.facebook.com/groups/784894608362976"><i class="fa-brands fa-facebook"></i></a>
+          <a class="icono" href="https://www.instagram.com/lasrecetasdeana_/"><i class="fa-brands fa-instagram"></i></a>
+          <a class="icono" href="https://api.whatsapp.com/send/?phone=5491139315332"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="barra_dropdown">
+          <span class="dropdown_boton"><i class="fa-solid fa-bars"></i></span>
+          <div class="dropdown_links">
+            <a class="link" href="index.html">Inicio</a>
+            <a class="link" href="Galeria.html">Galeria</a>
+            <a class="link" href="Contacto.html">Contacto</a>
+            <div class="dropdown_contacto">
+              <a class="icono" href="https://www.facebook.com/groups/784894608362976"><i class="fa-brands fa-facebook"></i></a>
+              <a class="icono" href="https://www.instagram.com/lasrecetasdeana_/"><i class="fa-brands fa-instagram"></i></a>
+              <a class="icono" href="https://api.whatsapp.com/send/?phone=5491139315332"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
           </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="https://www.facebook.com/groups/784894608362976"> <img src="img/logos/facebook.png" width="24" height="24"></a></li>
-            <li><a href="https://www.instagram.com/lasrecetasdeana_/"><img src="img/logos/instagram.png" width="24" height="24"></a></li>
-            <li><a href="index.html">Principal</a></li>
-            <li><a href="Galeria.html">Galeria</a></li>    
-            <li><a href="Contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
-    <main class="recetasmain">
+  <!-- FIN Barra de navegacion -->
+    <main>
       <h2>Recetas</h2>
       <ul class="recetas2">
         <li><a href="#PanQueso">Pancitos de queso sin harina</a></li>
@@ -112,5 +125,8 @@
       <!--Fin Receta-->
     </main>
     <footer>Matilde Gabriela Fainstein | +54 9 11 3931-5332</footer>
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
   </body>
 </html>

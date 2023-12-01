@@ -9,10 +9,28 @@ black
 /*Satisfy*/@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kalam&family=Satisfy&family=Sriracha&display=swap');
 /*Kalam  */@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
+/* VARIABLES */
+:root {
+	--colorbarra: #FFA460; /* BARRA DE NAVEGACIÓN */
+	--colorbody: #F9EFC9; /* BODY */
+	--colorboton: #6FAE46; /* BOTON */
+	--colortexto: black; /* TEXTO */
+	--colorfondo: #F0F4F9; /* FONDO */
+	--fuente1: 'Dancing Script';
+	--fuente2: Kalam;
+	--grande:  50px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	list-style: none;
+}
+
+a {
+	color: var(--colortexto);
+	text-decoration: none;
 }
 
 body {
@@ -26,40 +44,120 @@ body {
 }
 
 
-header {
-	background: #FFA460;
-	height: 130px;
-	position: fixed;
-  top: 0;
-  width: 100%;  
-}
-
-.navbar1{
+.barra {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.logo {
-	display: flex;
-	opacity: 1;
-}
-
-.marca {
-	margin-top: 0;
-	margin-left: 1em;
-	font-family: 'Dancing Script';
-	font-weight: bolder;
-}
-.marca h1{
+	background: var(--colorbarra);
+	padding: 0 10px;
+	position: fixed;
+	top:0;
 	width: 100%;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 0.35em;
+	color: var(--colortexto);
 }
-.marca p {
-	font-family: Kalam;
-	font-size: 1.5em;
+
+.barra_marca {
+	display: flex;
+	align-items: center;
+}
+
+.marca_logo {
+	height: 50px;
+	padding: 5px;
+}
+
+.marca_negocio {
+	font-family: var(--fuente2);
+	font-size: 18px;
+}
+
+.marca_nombre {
+	margin-left: 5px;
+	font-weight: 800;
+	font-family: var(--fuente1);
+	font-size: 18px;
+}
+
+.barra_links .link {
+	font-family: var(--fuente2);
+	color: var(--colorfondo);
+	padding: 0 10px;
+	height: 35px;
+	border-radius: 3px;
+	border: 2px solid var(--colorbarra);
+	transition: 0.5s linear;
+	color: var(--colortexto);
+
+}
+
+.barra_links .icono {
+	color: var(--colortexto);
+	padding: 0 5px;
+	height: 35px;
+	transition: 0.3s linear;
+	margin-right: 1em;
+}
+
+.barra_links .link:hover {
+	border: 2px solid var(--colorboton);
+}
+.barra_links .icono:hover {
+	color: var(--colorboton);
+}
+
+.barra_dropdown {
+	position: relative;
+	display: none;
+	width: 100px;
+	text-align: center;
+}
+
+	.dropdown_boton i {
+		background: var(--colorbarra);
+		color: var(--colortexto);
+		cursor:  pointer;
+		width: 100px;
+		height: 35px;
+		font-size: 30px;
+	}
+
+	.dropdown_links {
+		display: none;
+		position: absolute;
+		background: var(--colorbarra);
+		min-width: 100px;			
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown_links .link {
+		padding: 12px 16px;
+		color: var(--colortexto);
+		display: block;
+	}
+
+	.dropdown_links .link:hover {
+		background: var(--colorboton);
+		color: var(--colortexto);
+	}
+
+	.dropdown_contacto {
+		padding-bottom: 5px;
+	}
+
+	.dropdown_contacto .icono {
+		padding: 5px;
+		color: var(--colortexto);
+	}
+
+	.dropdown_contacto .icono:hover {
+		padding: 5px;
+		color: var(--colorboton);
+	}
+}
+
+.barra_dropdown:hover .dropdown_links {
+	display: block;
 }
 
 .galeria{
@@ -72,35 +170,9 @@ header {
 	display: block;
 	text-align: center;
 }
-ol{
-	margin: 0.5rem;
-	padding: 0.5rem;
-	box-sizing: border-box;
-}
-ul {
-	min-width: 500px;
-	display: flex;
-	justify-content: flex-end;
-	gap:  20px;
-}
-
-ul li {
-	margin-right: 1em;
-	list-style: none;
-	font-family: Kalam;
-	font-size: 1.2em;
-	font-weight: bold;
-	justify-content: center;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-}
-a:-webkit-any-link {
-    color: black;
-    cursor: pointer;
-}
+li{
+		list-style: disc;
+	}
 
 .recetas2{
 	margin: 0.5rem;
@@ -131,8 +203,6 @@ footer{
 	text-align: center;
 	padding: 0.5em 0;
 }
-
-
 
 /* ir arriba */
 .ir-arriba {
@@ -179,164 +249,80 @@ footer{
   content: "\ea3a";
 }
 
-
-
-
-/* chico */
-@media (max-width: 576px)  {
-	.logo{
-		
-		width: 320px;
-
-	}
-	.marca{
-		text-align: center;
-		width: 200px;
-	}
-	.marca h1{
-	    font-size: 1.5em;
-    	font-weight: bold;
-    	margin-top: 1em;
-	}
-	.marca p {
-		margin-top: 1em;
-		font-family: Kalam;
-		font-size: 1em;
+@media (max-width: 576px) {
+	.marca_negocio{
+		font-size: 0.95em;
 	}
 
-	.logo img {
-		margin-top: 1em;
-		margin-left: 1em;
-		width:  7em;
-		height: 100px;
+	.marca_nombre{
+		margin-left: 0.35em;
+		font-size: 0.95em;
 	}
 
-	ul{
-		display: inline-block;
-		margin-left: 0.15em;
-		margin-top: 0.5em;
+	.barra .barra_links {
+		display: none;
 	}
 
-	ul li {
-		display: table;
-		list-style: none;
-		font-family: Kalam;
-		font-size: 0.9em;
-		font-weight: bold;
-	}
-
-	li img{
-		width: 14px;
-		height: 14px;
+	.barra .barra_dropdown {
+		display: block;
 	}
 	.principal{
-		font-size: 1.2rem;
-		margin: 0 3rem 0 3rem;
+		font-size: 1.3em;
 	}
 
 	.alimentacion{
-		font-size: 1.2rem;
-		list-style: disc;
-		margin-left: 7rem;
-
+		font-size: 1.3em;
+		margin-left: 2em;
 	}
 }
 
-/* medio */
-@media (min-width: 577px) and (max-width: 1000px)  {
-	.logo{
-		width: 320px;
-	}
-	.marca{
-		margin-top: 1em;
-		text-align: center;
-		width: 250px;
-		height: 100px;
-	}
-	.marca h1{
-	    font-size: 1.5em;
-    	font-weight: bold;
-    	/*margin-top: 0.65em;*/
-	}
-	.marca p {
-		font-family: Kalam;
-		font-size: 1em;
+/* Mediano */
+@media (min-width: 577px) and (max-width: 1000px) {
+
+	.marca_negocio{
+			font-size: 1.4em;
 	}
 
-	.logo img {
-		margin-top: 1em;
-		margin-left: 1em;
-		width:  7em;
-		height: 100px;
+	.marca_nombre{
+		margin-left: 0.5em;
+		font-size: 1.4em;
 	}
 
-	ul{
-		display: inline-block;
-		margin-left: 1em;
-		margin-top: 0.3em;
+	.barra .barra_links {
+		display: none;
 	}
 
-	ul li {
-
-		list-style: none;
-		font-family: Kalam;
-		font-size: 1em;
-		font-weight: bold;
-	}
-
-	li img{
-		width: 18px;
-		height: 18px;
+	.barra .barra_dropdown {
+		display: block;
 	}
 	.principal{
-		font-size: 1.6rem;
-		margin: 0 3rem 0 3rem;
+		font-size: 1.5em;
 	}
 
 	.alimentacion{
-		font-size: 1.6rem;
-		list-style: disc;
-		margin-left: 7rem;
-
+		font-size: 1.5em;
+		margin-left: 2em;
 	}
 }
 
-/* grande */
-@media (min-width: 1001px)  {
-	.logo{
-		width: 400px;
+/* Largo */
+@media (min-width: 1001px) {
+	.marca_negocio{
+		font-size: 2em;
 	}
-	.marca{
-		margin-top: 1em;
-		width: 300px;
-		text-align: center;
-		height: 100px;
+
+	.marca_nombre{
+		margin-left: 0.5em;
+		font-size: 2em;
 	}
-	
-	.logo img {
-		margin-top: 1em;
-		margin-left: 1em;
-		width:  7em;
-		height: 3em;
-		height: 100px;
-	}
-	
-	ul{
-		margin-top: 2em;
-	}
-	li img{
-		width: 24px;
-		height: 24px;
-	}
+
 	.principal{
-		font-size: 1.8rem;
-		margin: 0 3rem 0 3rem;
+		font-size: 1.7em;
 	}
 
 	.alimentacion{
-		font-size: 1.8rem;
-		list-style: disc;
-		margin-left: 7rem;
+		font-size: 1.7em;
+		margin-left: 3em;
+
 	}
 }
-

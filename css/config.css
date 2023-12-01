@@ -110,6 +110,9 @@ a:-webkit-any-link {
 	justify-content: flex-start;
 }
 
+main{
+	margin-left: 2em;
+}
 
 contacto {
 	display: block;
@@ -127,7 +130,6 @@ footer{
 	width: 100%;
 	text-align: center;
 	padding: 0.5em 0;
-	
 }
 
 

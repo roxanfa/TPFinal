@@ -34,8 +34,7 @@ a {
 }
 
 body {
-	margin: 0;
-  padding: 150px 0 0 0;
+	margin-top: 0;
 	background: #F9EFC9;
 	font-family: Kalam;
 	position: relative;
@@ -44,13 +43,13 @@ body {
 }
 
 
+
 .barra {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background: var(--colorbarra);
 	padding: 0 10px;
-	position: fixed;
 	top:0;
 	width: 100%;
 	color: var(--colortexto);
@@ -161,11 +160,13 @@ body {
 }
 
 .galeria{
+	margin-top: 20px;
 	display: flex;
 	box-sizing: border-box;
 	justify-content: center;
 }
 .galeria2{
+	margin-top: 100px;
 	margin-left: 2em;
 	display: block;
 	text-align: center;
@@ -183,8 +184,14 @@ li{
 }
 
 main{
+	margin-top: 20px;
 	margin-left: 2em;
 }
+
+#PanQueso, #Tiramisu, #TortaManzana{
+	min-height: 100vh;
+}
+
 
 contacto {
 	display: block;

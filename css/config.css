@@ -272,6 +272,8 @@ footer{
 
 	.barra .barra_dropdown {
 		display: block;
+		width: 70px;
+		margin-right: 1em;
 	}
 	.principal{
 		font-size: 1.3em;

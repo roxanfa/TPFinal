@@ -141,6 +141,7 @@ body {
 
 	.dropdown_contacto {
 		padding-bottom: 5px;
+		margin-right: 1em;
 	}
 
 	.dropdown_contacto .icono {
@@ -258,12 +259,12 @@ footer{
 
 @media (max-width: 576px) {
 	.marca_negocio{
-		font-size: 0.95em;
+		font-size: 14px;
 	}
 
 	.marca_nombre{
-		margin-left: 0.35em;
-		font-size: 0.95em;
+		font-size: 14px;
+		margin-left: 0.5em;
 	}
 
 	.barra .barra_links {
@@ -272,8 +273,8 @@ footer{
 
 	.barra .barra_dropdown {
 		display: block;
-		width: 70px;
-		margin-right: 1em;
+		
+		
 	}
 	.principal{
 		font-size: 1.3em;
@@ -289,10 +290,12 @@ footer{
 @media (min-width: 577px) and (max-width: 1000px) {
 
 	.marca_negocio{
+			font-size: 16px;
 			font-size: 1.4em;
 	}
 
 	.marca_nombre{
+		font-size: 16px;
 		margin-left: 0.5em;
 		font-size: 1.4em;
 	}

@@ -216,8 +216,9 @@ li{
 	font-size: 1.5em;
 }
 #PanQueso, #Tiramisu, #TortaManzana{
+	margin-left: 20px;
 	margin-top: 25px;
-	font-family: var(--fuente2);
+	font-family: var(--fuente3);
 	min-height: 100vh;
 }
 contacto {

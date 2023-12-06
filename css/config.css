@@ -1,8 +1,10 @@
 /* colores usados
-#F9EFC9
-#FFA460
-black
-
+body #F9EFC9
+barra #FFA460
+texto black
+boton #6FAE46
+fondo #F0F4F9
+sombra darkslategray
 */
 /* fuentes externas */
 /*       */
@@ -16,6 +18,7 @@ black
 	--colorboton: #6FAE46; /* BOTON */
 	--colortexto: black; /* TEXTO */
 	--colorfondo: #F0F4F9; /* FONDO */
+	--colorsombra: darkslategray;
 	--fuente1: 'Dancing Script';
 	--fuente2: Kalam;
 	--grande:  50px;
@@ -42,8 +45,6 @@ body {
 	min-height: 100vh;
 }
 
-
-
 .barra {
 	display: flex;
 	justify-content: space-between;
@@ -52,29 +53,38 @@ body {
 	padding: 0 10px;
 	top:0;
 	width: 100%;
+	height: 100px;
 	color: var(--colortexto);
+}
+
+.marca{
+	margin-top: 1em;
+	text-align: center;
 }
 
 .barra_marca {
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 }
 
 .marca_logo {
-	height: 50px;
+	width: 125px;
+	margin-left: 1em;
+	margin-top: 1.5em;
+	height: 80px;
 	padding: 5px;
 }
 
 .marca_negocio {
+	align-items: center;
 	font-family: var(--fuente2);
-	font-size: 18px;
 }
 
 .marca_nombre {
-	margin-left: 5px;
+	margin-top: 0.5em;
+	margin-left: 1em;
 	font-weight: 800;
 	font-family: var(--fuente1);
-	font-size: 18px;
 }
 
 .barra_links .link {
@@ -86,7 +96,6 @@ body {
 	border: 2px solid var(--colorbarra);
 	transition: 0.5s linear;
 	color: var(--colortexto);
-
 }
 
 .barra_links .icono {
@@ -107,7 +116,7 @@ body {
 .barra_dropdown {
 	position: relative;
 	display: none;
-	width: 100px;
+	width: 120px;
 	text-align: center;
 
 
@@ -159,36 +168,86 @@ body {
 	display: block;
 }
 
-.galeria{
-	margin-top: 20px;
+/* INICIO Principal */
+h2{
+	padding: 25px;
+}
+.seccion_principal {
+	overflow: hidden ;
+	background: var(--colorbody);
+	height: 93.5vh;
+	position: relative;
+	z-index: -5;
 	display: flex;
-	box-sizing: border-box;
 	justify-content: center;
 }
-.galeria2{
-	margin-top: 100px;
-	margin-left: 2em;
-	display: block;
-	text-align: center;
+
+.imagenes{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.texto{
+	width: 60%;
+	flex-direction: column;
+	color: var(--blanco);
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.texto, .contenedor_principal{
+	display: flex;
+	/*justify-content: center;*/
+	width: 50%;
+}
+
+.principal{
+	font-family: var(--fuente2);
+}
+
+.contenedor_principal{
+	position: relative;
+}
+
+.imagenes img {
+	width: 550px;
+	border-radius: 300px 150px 350px 100px;
+	-webkit-border-radius: 300px 150px 350px 100px;
+	-moz-border-radius: 300px 150px 350px 100px;
+	-ms-border-radius: 300px 150px 350px 100px;
+	-o-border-radius: 300px 150px 350px 100px;
+
+}
+/* FIN Principal */
 li{
 		list-style: disc;
 	}
-
-.recetas2{
-	margin: 0.5rem;
-	padding: 0.5rem;
-	display: block;
-	font-size: 1.2rem;
-	justify-content: flex-start;
+.row{
+	height: 100vh;
+	justify-content: space-around;
 }
 
-main{
-	margin-top: 20px;
-	margin-left: 2em;
+.card{
+
+	font-size: 1em;
+	box-shadow: 5px 5px 5px darkslategray;
+	justify-content: space-around;
+}
+
+.btn{
+	background: var(--colorboton);
+}
+
+.card-title{
+	font-size: 1.5em;
+
 }
 
 #PanQueso, #Tiramisu, #TortaManzana{
+	margin-top: 25px;
+	font-family: var(--fuente2);
 	min-height: 100vh;
 }
 
@@ -216,12 +275,12 @@ footer{
 .ir-arriba {
   display:none;
   padding:20px;
-  background:var(--colorbarra);
+  background:var(--colorboton);
   font-size:20px;
   color:var(--colortexto);
   cursor:pointer;
   position: fixed;
-  bottom:20px;
+  bottom:60px;
   right:20px;
 }
 
@@ -258,47 +317,91 @@ footer{
 }
 
 @media (max-width: 576px) {
-	.marca_negocio{
-		font-size: 14px;
-	}
-
-	.marca_nombre{
-		font-size: 14px;
+	.marca_logo{
+		width: 80px;
+		height: 55px;
+		margin-top: 1em;
 		margin-left: 0.5em;
 	}
+
+	.marca_negocio {
+		font-size: 0.725em;
+	}
+
+.marca_nombre {
+	margin-top: 0.5em;
+	margin-left: 5px;
+	font-size: 1.45em;
+}
 
 	.barra .barra_links {
 		display: none;
 	}
 
 	.barra .barra_dropdown {
-		display: block;
-		
-		
+		display: block;		
 	}
 	.principal{
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 
 	.alimentacion{
-		font-size: 1.3em;
+		font-size: 1.1em;
 		margin-left: 2em;
+	}
+
+h2{
+		font-size: 2em;
+		text-align: center;
+		margin-top: 20px;
+
+	}
+.row{
+	margin-left: 25px;
+	flex-direction: column;
+}
+
+.card{
+		width: 295px;
+}
+
+.card-body img{
+		width: 50px;
+		height: 50px;
+	}
+	.card-title{
+	font-size: 1em;
+	}
+.btn{
+		font-size: .8em;
+	}
+	#PanQueso, #Tiramisu, #TortaManzana{
+		font-size: 1em;
+	}
+	footer{
+		font-size: .9em;
 	}
 }
 
 /* Mediano */
 @media (min-width: 577px) and (max-width: 1000px) {
 
-	.marca_negocio{
-			font-size: 16px;
-			font-size: 1.4em;
+	.marca_logo{
+		width: 100px;
+		height: 75px;
+		margin-top: 1em;
+		margin-left: 0.5em;
 	}
 
-	.marca_nombre{
-		font-size: 16px;
-		margin-left: 0.5em;
-		font-size: 1.4em;
+	.marca_negocio {
+		font-size: 1em;
 	}
+
+.marca_nombre {
+	margin-top: 0;
+	margin-left: 5px;
+	font-size: 2em;
+}
 
 	.barra .barra_links {
 		display: none;
@@ -308,44 +411,95 @@ footer{
 		display: block;
 	}
 	.principal{
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 	.alimentacion{
-		font-size: 1.5em;
+		font-size: 1.2em;
 		margin-left: 2em;
 	}
-	.recetas2{
-		font-size: 1.4em;
+
+	h2{
+		font-size: 2em;
+		text-align: center;
+		margin-top: 20px;
 	}
+
+.row{
+
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+
+.card{
+	width: 150px;
+}
+
+	.card-body img{
+		width: 100px;
+		height: 100px;
+	}
+	.card-title{
+	font-size: 1.3em;
+
+}
+.btn{
+		font-size: .8em;
+	}
+
 	#PanQueso, #Tiramisu, #TortaManzana{
+		font-size: 1.2em;
+	}
+	footer{
 		font-size: 1.2em;
 	}
 }
 
 /* Largo */
 @media (min-width: 1001px) {
-	.marca_negocio{
-		font-size: 2em;
-	}
+	.marca_negocio {
+	font-size: 1em;
+}
 
-	.marca_nombre{
-		margin-left: 0.5em;
-		font-size: 2em;
-	}
-
+.marca_nombre {
+	font-size: 2em;
+}
 	.principal{
-		font-size: 1.7em;
+		font-size: 1.5em;
 	}
 
 	.alimentacion{
-		font-size: 1.7em;
-		margin-left: 3em;
-	}
-	.recetas2{
 		font-size: 1.5em;
 	}
+
+	h2{
+		text-align: center;
+		margin-top: 20px;
+		font-size: 3em;
+	}
+.row{
+	
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+.card{
+		width: 300px;
+}
+	.card-body img{
+		width: 200px;
+		height: 200px;
+	}
+
+	.btn{
+		font-size: 1em;
+	}
+	
 	#PanQueso, #Tiramisu, #TortaManzana{
-		font-size: 1.4em;
+		font-size: 1.5em;
+	}
+	footer{
+		font-size: 1.35em;
 	}
 }

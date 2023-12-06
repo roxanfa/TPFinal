@@ -240,6 +240,16 @@ li{
 }
 
 .btn{
+	border: 1px solid var(--colorbarra);
+	background: var(--colorboton);
+}
+.btn:hover{
+	border: 1px solid var(--colorboton);
+	background: var(--colorbarra);
+}
+
+.boton:-webkit-any-link{
+	border: 1px solid var(--colorbarra);
 	background: var(--colorboton);
 }
 

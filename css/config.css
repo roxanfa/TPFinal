@@ -10,6 +10,7 @@ sombra darkslategray
 /*       */
 /*Satisfy*/@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&family=Kalam&family=Satisfy&family=Sriracha&display=swap');
 /*Kalam  */@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+/*Montserrat*/@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playpen+Sans&display=swap');
 
 /* VARIABLES */
 :root {
@@ -21,6 +22,7 @@ sombra darkslategray
 	--colorsombra: darkslategray;
 	--fuente1: 'Dancing Script';
 	--fuente2: Kalam;
+	--fuente3: Montserrat;
 	--grande:  50px;
 }
 
@@ -88,7 +90,8 @@ body {
 }
 
 .barra_links .link {
-	font-family: var(--fuente2);
+	font-family: var(--fuente3);
+	font-weight: bold;
 	color: var(--colorfondo);
 	padding: 0 10px;
 	height: 35px;

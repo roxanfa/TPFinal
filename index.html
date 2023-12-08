@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- CSS and JS file -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!-- CSS and JS file end here -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="images/png" href="img/logos/favicon.png">
     <title>Las recetas de Ana</title>
+        <!-- script para ir arriba -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/arriba.js"></script>
-    <link rel="stylesheet" href="css/config.css">
+    <!-- css para iconos de redes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- mis css -->
+    <link rel="stylesheet" type="text/css" href="css/comentarios.css">
+    <link rel="stylesheet" href="css/config.css">
   </head>
   <body>
     <span class="ir-arriba icon-arrow-up2"></span>
@@ -20,12 +31,14 @@
         <div class="barra_marca">
           <img class="marca_logo" src="img/logos/logo2.png">
           <div class="marca">
-            <h1 class="marca_nombre">Las Recetas de Ana</h1>
+            <h1 class="marca_nombre"><a href="index.html">Las Recetas de Ana</a></h1>
             <p class="marca_negocio">Viandas Saludables</p>   
           </div> 
         </div>
         <div class="barra_links">
+          <a class="link" href="#nosotros">Sobre nosotros</a>
           <a class="link" href="Recetas.html">Recetas</a>
+          <a class="link" href="#fiestas">Fiestas</a>
           <a class="link" href="Contacto.html">Contacto</a>
           <a class="icono" href="https://www.facebook.com/groups/784894608362976"><i class="fa-brands fa-facebook"></i></a>
           <a class="icono" href="https://www.instagram.com/lasrecetasdeana_/"><i class="fa-brands fa-instagram"></i></a>
@@ -34,7 +47,9 @@
         <div class="barra_dropdown">
           <span class="dropdown_boton"><i class="fa-solid fa-bars"></i></span>
           <div class="dropdown_links">
+            <a class="link" href="#nosotros">Nosotros</a>
             <a class="link" href="Recetas.html">Recetas</a>
+            <a class="link" href="#fiestas">Fiestas</a>
             <a class="link" href="Contacto.html">Contacto</a>
             <div class="dropdown_contacto">
               <a class="icono" href="https://www.facebook.com/groups/784894608362976"><i class="fa-brands fa-facebook"></i></a>
@@ -46,8 +61,84 @@
       </div>
     </header>
     <!-- FIN Barra de navegacion -->
-    <section class="seccion_principal">
-          <div class="texto">
+        <section>
+          <h1> Servicio de Viandas para empresa y particulares</h1>
+          <div class="carrusel">
+            <div class="imagenes">
+              <div style="width: 500px">
+                <h2 class="comidas2">Nuestras comidas</h2>
+                <div id="MiCarrusel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="img/01.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/02.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/03.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/04.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/05.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/06.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/07.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/08.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/09.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/10.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/11.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/12.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/13.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/14.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/15.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/16.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/17.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/18.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/19.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/20.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item">       <img src="img/21.jpg" class="d-block w-100" alt="..."> </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="carousel-bg">
+              <!-- Quote Image -->
+              <div>
+                <h2 class="coment">Comentarios de nuestros clientes</h2>
+                <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image">
+              </div>
+              <!-- Carousel Start below -->
+              <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel1" data-slide-to="1"></li>
+                  <li data-target="#carousel1" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="carousel-caption testimonial-caption-style">
+                      <p>Excelente la comida, cumple con los horarios de entrega.</p>
+                      <p class="testimonial-authors">Analía</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="carousel-caption testimonial-caption-style">
+                      <p>Rico y Abundante.</p>
+                      <p class="testimonial-authors">Angel</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="carousel-caption testimonial-caption-style">
+                      <p>No necesito cocinar más, me encanta su comida.</p>
+                      <p class="testimonial-authors">Gloria</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+                <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+              </div>
+            </div>
+          </div> 
+        </section>
+        <section class="seccion_principal">
+          <!--<div class="contenedor_principal">-->
+          <div id="nosotros" class="texto">
             <p class="principal">Somos una empresa dedicada a la gastronomía y nuestra especialidad son las comidas saludables. Priorizando los nutrientes que se necesitan para una mejor calidad de vida.</p>
             <p class="principal">Atendemos a empresas instituciones y particulares.</p>
             <p class= "principal">Pacientes con indicaciones médicas por condiciones específicas de salud:</p>
@@ -67,40 +158,56 @@
               <li>Alimentación Hipocalórica</li>
             </ol>
             <p class="principal">Puede consultar por otro tipo de alimentación</p>
-          </div>
-          <div class="imagenes">
-            <div style="width: 500px">
-            <div id="MiCarrusel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active"><img src="img/01.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/02.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/03.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/04.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/05.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/06.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/07.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/08.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/09.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/10.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/11.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/12.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/13.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/14.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/15.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/16.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/17.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/18.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/19.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/20.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="carousel-item">       <img src="img/21.jpg" class="d-block w-100" alt="..."> </div>
+          </div> 
+        </section>
+        <section id ="fiestas">
+          <h2>Opciones de menú para las fiestas</h2>
+          <div class="row">
+            <div class="col-sm-2 ">
+              <div class="card" style="text-align: center;">
+                <div class="card-body">
+                  <img src="img/fiestas/menu1.gif">
+                  <h5 class="card-title">Opción de menú 1</h5>
+                  <p class="card-text">Puede pedir éste menú por whatsapp haciendo click en el botón</p>
+                  <a href="https://api.whatsapp.com/send/?phone=5491139315332" class="btn btn-primary">Solicitar...</a>
+                </div>
               </div>
             </div>
-          </div>   
-          </div>      
-    </section>
-    <footer>
-        <i class="fa-regular fa-hand"></i>&#32;Matilde Gabriela Fainstein&#32;|&#32;<i class="fa-brands fa-whatsapp"></i> &#32;+54 9 11 3931-5332
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+            <div class="col-sm-2">
+              <div class="card" style="text-align: center;">
+                <div class="card-body">
+                  <img src="img/fiestas/menu2.gif">
+                  <h5 class="card-title">Opción de menú 2</h5>
+                  <p class="card-text">Puede pedir éste menú por whatsapp haciendo click en el botón</p>
+                  <a href="https://api.whatsapp.com/send/?phone=5491139315332" class="btn btn-primary">Solicitar...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="text-align: center;">
+                <div class="card-body">
+                  <img src="img/fiestas/menu3.gif">
+                  <h5 class="card-title">Opción de menú 3</h5>
+                  <p class="card-text">Puede pedir éste menú por whatsapp haciendo click en el botón</p>
+                  <a href="https://api.whatsapp.com/send/?phone=5491139315332" class="btn btn-primary">Solicitar...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="text-align: center;">
+                <div class="card-body">
+                  <img src="img/fiestas/menu4.gif">
+                  <h5 class="card-title">Opción de menú 4</h5>
+                  <p class="card-text">Puede pedir éste menú por whatsapp haciendo click en el botón</p>
+                  <a href="https://api.whatsapp.com/send/?phone=5491139315332" class="btn btn-primary">Solicitar...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+            <i class="fa-regular fa-hand"></i>&#32;Matilde Gabriela Fainstein&#32;|&#32;<i class="fa-brands fa-whatsapp"></i> &#32;+54 9 11 3931-5332
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
   </body>
 </html>

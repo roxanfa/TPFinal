@@ -459,7 +459,7 @@ footer i{
 	justify-content: space-around;
 }
 	.card{
-		width: 150px;
+		width: 130px;
 	}
 	.card-body img{
 		width: 100px;
@@ -520,11 +520,11 @@ footer i{
 		justify-content: space-around;	
 	}
 	.card{
-		width: 300px;
+		width: 200px;
 	}
 	.card-body img{
-		width: 200px;
-		height: 200px;
+		width: 180px;
+		height: 180px;
 	}
 	.btn{
 		font-size: 1em;

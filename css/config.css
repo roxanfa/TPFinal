@@ -259,14 +259,18 @@ li{
 	font-family: var(--fuente3);
 	min-height: 100vh;
 }
+#contactos{
+	margin-top: 0;
+}
 contacto {
-	margin-top: 100px;
+	margin-bottom: 50px;
 	display: block;
 	text-align: center;
 }
 contacto2{
 	display: block;
 	text-align: center;
+	margin-bottom: 100px;
 }
 footer{
 	background: var(--colorbarra);

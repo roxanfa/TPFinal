@@ -208,6 +208,7 @@ main{
 }
 
 .texto{
+	padding: 20px;
 	width: 80%;
 	color: var(--colortexto);
 	margin-left: 50px;
@@ -254,8 +255,10 @@ li{
 	font-size: 1.5em;
 }
 #PanQueso, #Tiramisu, #TortaManzana{
-	margin-left: 20px;
+	margin-left: 30px;
 	margin-top: 25px;
+	margin-right: 30px;
+	
 	font-family: var(--fuente3);
 	min-height: 100vh;
 }
@@ -284,7 +287,10 @@ footer{
 footer i{	
 	text-align: center;
 }
-
+h3{
+		font-family: var(--fuente3);
+		font-weight: bold;
+	}
 
 /* ir arriba */
 .ir-arriba {
@@ -357,7 +363,7 @@ footer i{
 
 	.row{
 		margin-top: 0;
-		padding: 0;
+		padding: 5px;
 	}
 	.comidas2{
 		font-size: 1em;
@@ -399,7 +405,14 @@ footer i{
 		font-size: .8em;
 	}
 	#PanQueso, #Tiramisu, #TortaManzana{
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 15px;
 		font-size: 1em;
+	}
+	h3{
+		font-size:1.5em;
+		text-align: center;
 	}
 	footer{
 		font-size: .9em;
@@ -454,6 +467,11 @@ footer i{
 		text-align: center;
 		margin-top: 20px;
 	}
+	#fiestas{
+		margin-left: 0;
+		margin-right: 20px;
+		padding: 10px;
+	}
 .row{
 	flex-direction: row;
 	justify-content: space-around;
@@ -462,8 +480,8 @@ footer i{
 		width: 130px;
 	}
 	.card-body img{
-		width: 100px;
-		height: 100px;
+		width: 115px;
+		height: 115px;
 	}
 	.card-title{
 		font-size: 1.3em;
@@ -472,7 +490,14 @@ footer i{
 		font-size: .8em;
 	}
 	#PanQueso, #Tiramisu, #TortaManzana{
+		margin-left: 30px;
+		margin-right: 30px;
+		padding: 50px;
 		font-size: 1.2em;
+	}
+	h3{
+		font-size: 2em;
+		text-align: center;
 	}
 	footer{
 		font-size: 1.2em;
@@ -486,7 +511,7 @@ footer i{
 }
 
 /* Media quierie para monitores */
-@media (min-width: 1001px) {
+@media (min-width: 1001px) and (max-width:1299px){
 	.marca_negocio {
 		font-size: 1.5em;
 	}
@@ -515,6 +540,11 @@ footer i{
 		margin-top: 20px;
 		font-size: 3em;
 	}
+	#fiestas{
+		margin-left: 0;
+		margin-right: 20px;
+		padding: 40px;
+	}
 	.row{
 		flex-direction: row;
 		justify-content: space-around;	
@@ -530,7 +560,82 @@ footer i{
 		font-size: 1em;
 	}
 	#PanQueso, #Tiramisu, #TortaManzana{
+		margin-left: 50px;
+		margin-right: 50px;
+		padding: 50px;
 		font-size: 1.5em;
+	}
+	h3{
+		font-size: 2em;
+		text-align: center;
+	}
+	footer{
+		font-size: 1.35em;
+	}
+	.coment{
+	  font-size: 2em;
+	}
+	.comidas2{
+	  font-size: 2em;
+	}
+}
+@media (min-width: 1300px){
+	.marca_negocio {
+		font-size: 1.5em;
+	}
+	.marca .marca_nombre a {
+		font-size: 1em;
+		font-weight: bold;
+	}
+	.barra_links a {
+	font-size: 1em;
+	}
+	.barra_links .icono {
+		font-size: 1em;
+	}
+	section h1{
+		margin-top: 30px;
+	  font-size: 3em;
+	}
+	.principal{
+		font-size: 2em;
+	}
+	.alimentacion{
+		font-size: 1.75em;
+	}
+	h2{
+		text-align: center;
+		margin-top: 20px;
+		font-size: 3em;
+	}
+	#fiestas{
+		margin-left: 0;
+		margin-right: 20px;
+		padding: 40px;
+	}
+	.row{
+		flex-direction: row;
+		justify-content: space-around;	
+	}
+	.card{
+		width: 250px;
+	}
+	.card-body img{
+		width: 210px;
+		height: 210px;
+	}
+	.btn{
+		font-size: 1em;
+	}
+	#PanQueso, #Tiramisu, #TortaManzana{
+		margin-left: 50px;
+		margin-right: 50px;
+		padding: 50px;
+		font-size: 1.5em;
+	}
+	h3{
+		font-size: 2em;
+		text-align: center;
 	}
 	footer{
 		font-size: 1.35em;

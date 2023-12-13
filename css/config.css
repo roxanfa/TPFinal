@@ -189,6 +189,7 @@ h2{
 section #fiestas{
 	margin-top: 100px;
 }
+
 #fiestas h2{
 	margin-top: 100px;
 }
@@ -541,7 +542,7 @@ h3{
 		font-size: 3em;
 	}
 	#fiestas{
-		margin-left: 0;
+		
 		margin-right: 20px;
 		padding: 40px;
 	}
